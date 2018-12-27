@@ -4,39 +4,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <link rel="stylesheet" href="css/bootstrap4.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/slider.css">
 <link href="animate.css-master/animate.css" rel="stylesheet" />
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <title>Welcome</title>
-<script>
-   $(document).ready(function() {
-     $(".ap").hide();
-     $("#show_hide").click(function () {
-         $(".carousel-inner").hide();
-         $(".ap").show();
-  });  
-   $(window).scroll(function(){
-         $(".carousel-inner").show();
-         $(".ap").show();
-  });
-  });
-  
- $(document).ready(function() {
-     $(".ap").hide();
-     $(".app").hide();
-     $("#show_hide1").click(function () {
-         $(".carousel-inner").hide();
-         $(".app").show();
-  });  
-   $(window).scroll(function(){
-         $(".carousel-inner").show();
-         $(".app").show();
-  });
-  });
-</script>
+<style>
+        #content {
+           padding-top:60px;
+        }
+		</style>
 </head>
 <body id="myPage">
 <div class="container-fluid bg-head header-top d-md-block fixed-top ">
@@ -99,7 +78,7 @@
       <img src="img/m1.jpg" alt="img1" class="w-100 d-block d-sm-none">
        <div class="carousel-caption d-none d-md-block">
         <h1>WELCOME TO THE WEBSITE</h1>
-		<div class="btnlogin pt-3"><button type="submit" class="btn btn-sm" id="show_hide">Get Started</button></div>
+		<div class="btnlogin pt-3"><button type="submit" class="btn btn-sm" id="show_hide"><a href="#content">Get Started</a></button></div>
        </div>
     </div>
     <div class="carousel-item">
@@ -107,7 +86,7 @@
       <img src="img/m2.jpg" alt="img2" class="w-100 d-block d-sm-none">
       <div class="carousel-caption d-none d-md-block">
         <h1>WELCOME TO THE WEBSITE</h1>
-		<div class="btnlogin pt-3"><button type="submit" class="btn btn-sm" id="show_hide1">Get Started</button></div>
+		<div class="btnlogin pt-3"><button type="submit" class="btn btn-sm" id="show_hide1"><a href="#content">Get Started</a></button></div>
        </div>
     </div>
     
@@ -121,11 +100,11 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div class="container-fluid pt-5 ap" >
+<div class="container-fluid ap" >
 	<div class="container">
-		<div class="row pt-3 text-center">		
+		<div class="row text-center" id="content">		
 			<div class="col-md-2"><div class="d-none d-md-block linel"></div></div>
-			<div class="col-md-8">
+			<div class="col-md-8" >
 			 <h2 style="color:rgba(210, 105, 30, 0.74);">Welcome</h2>
 			<p>Beez India is major supplier of honey in the Indian Market dealing in over 4,000 tons a year.</p>
 			<p>Beez India specializes in various types of honey such as Brasscia (mustard and Toria), Lychee,Eucalyptus, <br /> Karanj and Sunflower. Beez India has state of the art honey processing unit.</p>
